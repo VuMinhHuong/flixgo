@@ -1,0 +1,99 @@
+@import "../../gen/style";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: $textColorWhite;
+    font-size: $fsbig;
+    font-family: $font;
+}
+
+.new-item-down {
+    width: 45%;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    margin: 10px 0px;
+    .left-item {
+        .img {
+            width: 160px;
+            height: 240px;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .cover-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 160px;
+            height: 240px;
+            background-color: rgba(250, 0, 0, 0.4);
+            cursor: pointer;
+            display: none;
+            .ion-icon {
+                position: absolute;
+                top: 30%;
+                left: 30%;
+                width: 40%;
+                height: 30%;
+                ion-icon {
+                    background-color: rgba(250, 0, 0, 0.4);
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .bru-over {
+            display: block;
+        }
+    }
+
+    .right-item {
+        margin-left: 25px;
+        .new-item-down-main-title {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .type {
+            display: flex;
+            .type-film, .type-type {
+                font-size: $fssmall;
+                color: #ff5860;
+                cursor: pointer;
+                margin: 8px 0px;
+            }
+            .type-type {
+                margin-left: 5px;
+            }
+        }
+        .rate {
+            display: flex;
+            font-size: 16px;
+            font-weight: 500;
+            align-items: center;
+            margin: 10px 0px;
+            &-start {
+                ion-icon {
+                    color: #ff5860;
+                }
+            }
+            &-number {
+                margin-left: 5px;
+            }
+            &-display, &-age {
+                margin:0px 5px;
+                color: $textColorGray;
+                border: 1px solid $textColorGray;
+                border-radius: 5%;
+                padding: 1px 3px;
+            }
+        }
+        .descript {
+            color: $textColorGray;
+        }
+    }
+}
