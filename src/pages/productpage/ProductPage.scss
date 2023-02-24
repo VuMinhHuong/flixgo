@@ -84,6 +84,7 @@
                 }
             }
         }
+    }
         .productpage-container {
             width: 80%;
             margin: auto;
@@ -95,6 +96,13 @@
             }
             .also-like {
                 width: 30%;
+                margin-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .also-like-item {
+                    display: block;
+                }
             }
     }
 
@@ -108,5 +116,4 @@
             height: 100%;
         }
     }
-}
 }
