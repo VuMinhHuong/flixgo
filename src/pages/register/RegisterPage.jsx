@@ -4,6 +4,7 @@ import logo from "../../assets/img/logo.svg"
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
   const [name, setName] = useState("")
@@ -68,7 +69,7 @@ const LoginPage = () => {
       <button className='btn-si' onClick={handleSignUp}>SIGN UP</button>
       <div className="sing-up">
         <div className="first">Already have an account ?</div>
-        <div className="second">Sing in!</div>
+        <div className="second"><Link to="/login">Sing in!</Link></div>
       </div>
     </div>
   )

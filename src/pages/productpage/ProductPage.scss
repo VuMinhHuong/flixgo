@@ -9,7 +9,7 @@
     background-color: $bgc;
     font-family: $font;
 }
-.homepage {
+.productpage {
     width: 100%;
     .nav-comp {
         box-shadow: 0 5px 25px 0 rgb(0 0 0 / 30%);
@@ -21,28 +21,33 @@
             margin: auto;
         }
     }
-    .new-item-top-container {
-        width: 100%;
+
+    .productpage-detail {
+        padding: 30px 0px 40px 0px;
+        margin: auto;
         border-bottom: 3px solid $textColorRed;
-        margin-top: 80px;
-        padding-bottom: 100px;
-        .main-title {
+        &-title {
             width: 80%;
             margin: 40px auto;
             font-size: 36px;
-            b {
-                font-size: 36px;
-            }
         }
-        .new-item-top-comp {
+        &-container {
             width: 80%;
             margin: auto;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: end;
+            .component-container {
+                width: 45%;
+            }
+            .video {
+                width: 50%;
+                border-radius: 5%;
+            }
         }
     }
-    .new-item-down-comp {
+
+    .productpage-discover {
         .menu-item {
             width: 100%;
             height: 120px;
@@ -79,49 +84,22 @@
                 }
             }
         }
-        .items {
-            width: 80%;
-            margin: 40px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-    }
-    .expect {
-        width: 100%;
-        // background-image: url(../../assets/img/bgExpect.jpg);
-        &-title {
-            background: none;
-            width: 80%;
-            margin: auto;
-            font-size: 36px;
-            padding: 80px 0px 40px 0px;
-        }
-        &-comp {
-            background: none;
+        .productpage-container {
             width: 80%;
             margin: auto;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-        }
+            align-items: flex-start;
+            .item-container {
+                width: 60%;
+            }
+            .also-like {
+                width: 30%;
+            }
     }
-    .btn-show {
-        width: 100%;
-        margin: auto;
-        height: 20vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        button {
-            width: 150px;
-            height: 50px;
-            background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
-            border: none;
-            border-radius: 5%;
-        }
-    }
+
+
+
     .footer-img {
         width: 100%;
         height: 80vh;
@@ -131,4 +109,4 @@
         }
     }
 }
-
+}

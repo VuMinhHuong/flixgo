@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import Navbar from '../../components/homePage/Navbar'
-import NewItemDown from '../../components/homePage/NewItemDown'
 import NewItemTop from '../../components/homePage/NewItemTop'
+import NewItemDown from '../../components/homePage/NewItemDown'
+import NewItemExpect from '../../components/homePage/NewItemExpect'
+import footer from "../../assets/img/footer.JPG"
 import "./Hompage.scss"
 
 const Hompage = () => {
@@ -44,12 +46,23 @@ const Hompage = () => {
               </div>
             </div>
             <div className="expect">
-              <NewItemTop/>
-              <NewItemTop/>
-              <NewItemTop/>
-              <NewItemTop/>
-              <NewItemTop/>
-              <NewItemTop/>
+              <div className="expect-title">
+                Expected premiere
+              </div>
+              <div className="expect-comp">
+                <NewItemExpect/>
+                <NewItemExpect/>
+                <NewItemExpect/>
+                <NewItemExpect/>
+                <NewItemExpect/>
+                <NewItemExpect/>
+              </div>
+            </div>
+            <div className="btn-show">
+              <button>SHOW MORE</button>
+            </div>
+            <div className="footer-img">
+              <img src={footer} alt="footer-img" />
             </div>
     </div>
   )

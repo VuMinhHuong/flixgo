@@ -4,6 +4,7 @@ import logo from "../../assets/img/logo.svg"
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
 
@@ -61,7 +62,7 @@ const LoginPage = () => {
       <button className='btn-si'onClick={handleSignIn} >SING IN</button>
       <div className="sing-up">
         <div className="first">Don't have an account ?</div>
-        <div className="second">Sing up!</div>
+        <div className="second"><Link to="/register">Sing up!</Link></div>
       </div>
       <div className="forgot">Forgot password ?</div>
             

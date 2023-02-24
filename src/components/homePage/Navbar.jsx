@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import "./Navbar.scss"
 
 import logo from "../../assets/img/logo.svg"
@@ -30,7 +31,7 @@ const header = () => {
         <div className="right">
             <div className="search"><ion-icon name="search-outline"></ion-icon></div>
             <div className="language">EN</div>
-            <button>SIGN IN</button>
+            <Link to="/login"><button>SIGN IN</button></Link>
         </div>
     </div>
   )
